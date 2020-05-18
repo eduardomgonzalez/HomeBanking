@@ -237,7 +237,11 @@ function transferirDinero() {
 function iniciarSesion() {
   var password = 1234;
 
-  var passwordIngresado = parseInt(prompt("Ingrese el password de su cuenta:"));
+  var passwordIngresado = parseInt(
+    prompt(`Ingrese el password de su cuenta
+   (Contraseña generica: "1234".
+   Nº de cuentas a las cuales se pueden transferir: "1234567" y "7654321")`)
+  );
 
   if (passwordIngresado == password) {
     alert(
